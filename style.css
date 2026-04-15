@@ -2,69 +2,72 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-html {
-  font-size: 62.5%;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
-  background-color: #fff0f6;
-  font-family: "Minims", sans-serif;
-}
-
-.container {
-  height: 100vh;
-  margin: 0 auto;
-
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-
-.cat-img {
-  width: 30rem;
-  height: 30rem;
-  margin-bottom: 2rem;
+  height: 100vh;
+  text-align: center;
+  background-color: #ffe6f0;
+  padding: 20px;
 }
 
 .title {
-  font-size: 3.6rem;
-  color: #f53699;
-  text-align: center;
-  margin-bottom: 2rem;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.cat-img {
+  width: 280px;
+  max-width: 90%;
+  height: auto;
+  margin-bottom: 20px;
 }
 
 .buttons {
   display: flex;
+  gap: 15px;
   flex-wrap: wrap;
-  align-items: center;
   justify-content: center;
-
-  gap: 1rem;
 }
 
-.btn {
-  padding: 1.5rem 2.5rem;
+button {
+  padding: 12px 25px;
+  font-size: 1.2rem;
   border: none;
-  border-radius: 4px;
-
-  color: white;
-  font-size: 1.6rem;
-  font-weight: 600;
+  border-radius: 10px;
   cursor: pointer;
-  display: inline-block;
 }
 
 .btn--yes {
-  background-color: #40c057;
+  background-color: #ff4d6d;
+  color: white;
 }
 
 .btn--no {
-  background-color: #f03e3e;
+  background-color: #ccc;
 }
 
 .hidden {
   display: none;
+}
+
+/* Mobile adjustments */
+@media (max-width: 600px) {
+  .title {
+    font-size: 1.6rem;
+  }
+
+  button {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+
+  .cat-img {
+    width: 220px;
+  }
 }
