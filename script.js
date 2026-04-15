@@ -14,7 +14,7 @@ const messages = [
   "Renaz please...",
   "Don't do this 😭",
   "Aku akan nangis...",
-  "Last chance!"
+  "Last..."
 ];
 
 function generateMessage(index) {
