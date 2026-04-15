@@ -24,7 +24,7 @@ function generateMessage(index) {
 // YES BUTTON
 yesButton.addEventListener("click", function () {
   catImg.src = "img/cat-yes.jpg"; // make sure this exists
-  title.textContent = "YAY!!! ❤️";
+  title.textContent = "YAY ❤️";
   document.querySelector(".buttons").classList.add("hidden");
 });
 
