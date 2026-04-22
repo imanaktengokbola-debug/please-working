@@ -12,9 +12,9 @@ const messages = [
   "No",
   "Are you sure?",
   "Really sure?",
-  "Renaz please...",
+  "Piqa please...",
   "Don't do this",
-  "Aku akan nangis...",
+  "I akan nangis...",
   "Last..."
 ];
 
