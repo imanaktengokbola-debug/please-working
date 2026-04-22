@@ -12,9 +12,9 @@ const messages = [
   "No",
   "Are you sure?",
   "Really sure?",
-  "Renaz please...",
+  "Piqa please...",
   "Don't do this",
-  "Aku akan nangis...",
+  "I akan nangis...",
   "Last..."
 ];
 
@@ -27,8 +27,12 @@ document.addEventListener("click", () => {
   music.play();
 }, { once: true });
 
-// YES BUTTON
+// YES BUTTON (UPDATED)
 yesButton.addEventListener("click", function () {
+  const confirmAction = confirm("Are you sure?");
+  
+  if (!confirmAction) return;
+
   catImg.src = "img/cat-yes.jpg";
   title.textContent = "YAY ❤️";
   document.querySelector(".buttons").classList.add("hidden");
