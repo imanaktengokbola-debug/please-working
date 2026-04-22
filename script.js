@@ -28,10 +28,13 @@ document.addEventListener("click", () => {
 }, { once: true });
 
 // YES BUTTON
-yesButton.addEventListener("click", function () {
-  catImg.src = "img/cat-yes.jpg";
-  title.textContent = "YAY ❤️";
-  document.querySelector(".buttons").classList.add("hidden");
+yesBtn.addEventListener("click", function () {
+    const confirmAction = confirm("Are you sure?");
+    
+    if (confirmAction) {
+        // keep your original YES behavior here
+        alert("YAY!");
+    }
 });
 
 // NO BUTTON
