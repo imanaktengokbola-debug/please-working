@@ -12,9 +12,9 @@ const messages = [
   "No",
   "Are you sure?",
   "Really sure?",
-  "Piqa please...",
+  "Renaz please...",
   "Don't do this",
-  "I akan nangis...",
+  "Aku akan nangis...",
   "Last..."
 ];
 
@@ -28,13 +28,10 @@ document.addEventListener("click", () => {
 }, { once: true });
 
 // YES BUTTON
-yesBtn.addEventListener("click", function () {
-    const confirmAction = confirm("Are you sure?");
-    
-    if (confirmAction) {
-        // keep your original YES behavior here
-        alert("YAY!");
-    }
+yesButton.addEventListener("click", function () {
+  catImg.src = "img/cat-yes.jpg";
+  title.textContent = "YAY ❤️";
+  document.querySelector(".buttons").classList.add("hidden");
 });
 
 // NO BUTTON
@@ -49,6 +46,3 @@ noButton.addEventListener("click", function () {
   const scale = 1 + noCount * 0.2;
   yesButton.style.transform = `scale(${scale})`;
 });
-
-// DEBUG (you can remove later)
-console.log("Script loaded successfully");
